@@ -1,25 +1,25 @@
 # PandasAssignment
 
 Q1. How do you load a CSV file into a Pandas DataFrame?
-A) pd.read_csv(file_name|file_path)
+A) dataFrame_name = pd.read_csv(file_name|file_path)
 Q2. How do you check the data type of a column in a Pandas DataFrame?
 A) dataFrame_name['column_name'].dtype
 Q3. How do you select rows from a Pandas DataFrame based on a condition?
-A) new_dataFrame = dataFrame_name[condition]
+A) new_dataFrame_name = dataFrame_name[condition]
 Q4. How do you rename columns in a Pandas DataFrame?
-A) dataFrame_name.rename(columns={'old_column_name':'new_column_name'})
+A) new_dataFrame_name = dataFrame_name.rename(columns={'old_column_name':'new_column_name'})
 Q5. How do you drop columns in a Pandas DataFrame?
-A) dataFrame_name.drop(columns=['column_name'])
+A) new_dataFrame_name = dataFrame_name.drop(columns=['column_name'])
 Q6. How do you find the unique values in a column of a Pandas DataFrame?
-A)
+A) unique_values = dataFrame_name['column_name'].unique()
 Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
-
+A) missingvalues = dataFrame_name.isna.sum()
 Q8. How do you fill missing values in a Pandas DataFrame with a specific value?
-
+A) dataFrame_name = dataFrame_name.fillna(value)
 Q9. How do you concatenate two Pandas DataFrames?
-
+A) new_dataFrame_name = pd.concat([dataFrame1,dataFrame2])
 Q10. How do you merge two Pandas DataFrames on a specific column?
-
+A) 
 Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
 
 Q12. How do you pivot a Pandas DataFrame?
