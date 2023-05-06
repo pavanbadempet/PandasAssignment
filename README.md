@@ -1,7 +1,7 @@
 # PandasAssignment
 
 Q1. How do you load a CSV file into a Pandas DataFrame?
-A) dataFrame_name = pd.read_csv(file_name|file_path)
+A) dataFrame_name = pd.read_csv(file_name/file_path)
 Q2. How do you check the data type of a column in a Pandas DataFrame?
 A) dataFrame_name['column_name'].dtype
 Q3. How do you select rows from a Pandas DataFrame based on a condition?
@@ -19,19 +19,19 @@ A) dataFrame_name = dataFrame_name.fillna(value)
 Q9. How do you concatenate two Pandas DataFrames?
 A) new_dataFrame_name = pd.concat([dataFrame1,dataFrame2])
 Q10. How do you merge two Pandas DataFrames on a specific column?
-A) 
+A) dataFrame1.merge(dataframe2,on='column_name')
 Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
-
+A) dataFrame_name.grupby('column_name')['column_name'].agg(aggregation_function)
 Q12. How do you pivot a Pandas DataFrame?
-
+A) dataFrame_name.pivot(index='index_column', columns='columns_to_pivot', values='values_to_show')
 Q13. How do you change the data type of a column in a Pandas DataFrame?
-
+A) dataFrame_name['column_name'] = dataFrame_name['column_name'].astype('new_data_type')
 Q14. How do you sort a Pandas DataFrame by a specific column?
-
+A) dataFrame_name.sort_values(by='column_name', ascending=True/False, inplace=True)
 Q15. How do you create a copy of a Pandas DataFrame?
-
+A) new_dataframe_name = dataFrame_name.copy()
 Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
-
+A) 
 Q17. How do you calculate the mean of a column in a Pandas DataFrame?
 
 Q18. How do you calculate the standard deviation of a column in a Pandas DataFrame?
